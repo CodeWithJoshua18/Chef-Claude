@@ -27,3 +27,36 @@ header > h1 {
     font-weight: 400;
     color: #333333;
 }
+
+/* main section */
+main {
+    padding: 10px 30px;
+}
+
+.add-ingredients {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 12px;
+    height: 38px;
+}
+
+.add-ingredients  input {
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 5px 13px;
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.add-ingredients  button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background-color: #141413;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
