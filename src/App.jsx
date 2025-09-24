@@ -1,11 +1,14 @@
-
+import Header from './components/Header'
+import Main from './components/Main'
+import './styles/global.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      
+      <Header />
+      <Main />
     </>
   )
 }
