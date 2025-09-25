@@ -19,10 +19,10 @@ function Main(){
         <main className='add-ingredients'>
             <form action={addIngredient}>
                 <input 
-                aria-label='Add ingredient' 
-                type="text" 
-                placeholder='e.g Eggs' 
-                name='ingredient'
+                    aria-label='Add ingredient' 
+                    type="text" 
+                    placeholder='e.g Eggs' 
+                    name='ingredient'
                 />
                 <button>+ Add Ingredient</button>
             </form>
