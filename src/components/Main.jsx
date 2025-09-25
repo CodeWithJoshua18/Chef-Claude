@@ -5,12 +5,9 @@ function Main(){
 
    const [ingredients, setIngredients] = useState([])
 
-    function handleSubmit(e){
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
+    function addIngredient(formData){
         const ingredient = formData.get('ingredient');
         setIngredients(prevIngredients => [...prevIngredients, ingredient]);
-        e.currentTarget.reset();
         
     }
 
@@ -20,7 +17,7 @@ function Main(){
     
     return(
         <main className='add-ingredients'>
-            <form onSubmit={handleSubmit}>
+            <form action={addIngredient}>
                 <input 
                 aria-label='Add ingredient' 
                 type="text" 
@@ -29,6 +26,8 @@ function Main(){
                 />
                 <button>+ Add Ingredient</button>
             </form>
+            
+            <h1>Ingredients on hand:</h1>
 
             <ul>
                 {items}
@@ -37,4 +36,4 @@ function Main(){
     )
 }
 
-export default Main
+export default Main;
