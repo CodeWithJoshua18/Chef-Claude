@@ -34,29 +34,54 @@ main {
 }
 
 .add-ingredients {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 12px;
-    height: 38px;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  gap: 1rem; /* space between form and list */
 }
 
-.add-ingredients  input {
-    border-radius: 6px;
-    border: 1px solid #D1D5DB;
-    padding: 5px 13px;
-    flex-grow: 1;
-    min-width: 150px;
-    max-width: 400px;
+.add-ingredients form {
+  display: flex;
+  gap: 0.5rem;
 }
 
-.add-ingredients  button {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-radius: 6px;
-    border: none;
-    background-color: #141413;
-    color: white;
-    padding: 8px 16px;
-    cursor: pointer;
-    margin-left: 5px;
+.add-ingredients input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.add-ingredients button {
+  background-color: #0f0f0f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-ingredients button:hover {
+  background-color: #070707;
+}
+
+.add-ingredients ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  margin: 0;
+}
+
+.add-ingredients li {
+  padding: 0.3rem 0;
+  font-size: 1rem;
+  color: #333;
 }
